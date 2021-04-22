@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tik-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h2>Tick-Tac-Toe</h2>
+    </header>
+
+    <div class="board">
+      <button id="1" class="num" onclick="display(this.id)"></button>
+      <button id="2" class="num" onclick="display(this.id)"></button>
+      <button id="3" class="num" onclick="display(this.id)"></button><br />
+      <button id="4" class="num" onclick="display(this.id)"></button>
+      <button id="5" class="num" onclick="display(this.id)"></button>
+      <button id="6" class="num" onclick="display(this.id)"></button><br />
+      <button id="7" class="num" onclick="display(this.id)"></button>
+      <button id="8" class="num" onclick="display(this.id)"></button>
+      <button id="9" class="num" onclick="display(this.id)"></button>
+    </div>
+
+    <div id="screen">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';"
+        >&times;</span
+      >
+      Result
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
