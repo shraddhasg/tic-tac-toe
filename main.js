@@ -13,6 +13,7 @@ function play(clicked_id) {
     check(clicked_id);
   }
   count++;
+  if (count > 9) result("Game Over");
 }
 
 function check(clicked_id) {
@@ -349,6 +350,7 @@ function result(text) {
   let screen = document.getElementById("screen");
   if (text == "X") screen.innerText = " ** PERSON A IS WINNER **";
   else if (text == "O") screen.innerText = "** PERSON B IS WINNER **";
+  else screen.innerText = text;
 }
 
 function display(clicked_id) {
